@@ -1,4 +1,4 @@
-module github.com/kubewarden/go-policy-template
+module github.com/bmutziu/kubewarden-crossplane-sql
 
 go 1.21
 

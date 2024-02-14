@@ -4,33 +4,33 @@
 #
 # This config can be saved to its default location with:
 #   kwctl scaffold artifacthub > artifacthub-pkg.yml 
-version: 0.0.2
+version: 0.0.1
 name: crossplane-sql
 displayName: DOT SQL
-createdAt: 2024-02-14T17:59:58.436365Z
+createdAt: 2024-02-14T11:40:50.123456789Z
 description: Kubewarden Policies for dot-sql Crossplane Compositions
 license: Apache-2.0
 homeURL: https://github.com/bmutziu/kubewarden-crossplane-sql
 containersImages:
 - name: policy
-  image: ghcr.io/bmutziu/kubewarden/crossplane-sql:v0.0.2
+  image: ghcr.io/bmutziu/kubewarden/crossplane-sql:v0.0.1
 keywords:
 - crossplane
 - postgresql
 - kubewarden
 links:
 - name: policy
-  url: https://github.com/bmutziu/kubewarden-crossplane-sql/releases/download/v0.0.2/policy.wasm
+  url: https://github.com/bmutziu/kubewarden-crossplane-sql/releases/download/v0.0.1/policy.wasm
 - name: source
   url: https://github.com/bmutziu/kubewarden-crossplane-sql
 install: |
   The policy can be obtained using [`kwctl`](https://github.com/kubewarden/kwctl):
   ```console
-  kwctl pull ghcr.io/bmutziu/kubewarden/crossplane-sql:v0.0.2
+  kwctl pull ghcr.io/bmutziu/kubewarden/crossplane-sql:v0.0.1
   ```
   Then, generate the policy manifest and tune it to your liking. For example:
   ```console
-  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/bmutziu/kubewarden/crossplane-sql:v0.0.2
+  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/bmutziu/kubewarden/crossplane-sql:v0.0.1
   ```
 maintainers:
 - name: Bogdan Muțiu
